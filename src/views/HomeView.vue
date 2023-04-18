@@ -25,8 +25,18 @@
         <Contact />
       </v-container>
     </div>
+
     <div>
-      <div class="text-h2 text-center pa-12">Notre Localisation</div>
+      <div class="text-h2 text-center pa-12 mt-9">
+        Transformez votre sourire
+      </div>
+      <v-container class="max-width">
+        <SlickCarousel />
+      </v-container>
+    </div>
+
+    <div>
+      <div class="text-h2 text-center pa-12 mt-12">Notre Localisation</div>
       <v-container class="max-width">
         <MapLocation />
       </v-container>
@@ -43,6 +53,7 @@ import Carousel from "../components/CarouSel.vue";
 import PricingCards from "../components/PricingCards.vue";
 import Heading from "../components/HeaDing.vue";
 import Contact from "../components/ContactSection.vue";
+import SlickCarousel from "../components/MiniCarousel.vue";
 import MapLocation from "../components/MapLocation.vue";
 import FooTer from "../components/FootTer.vue";
 export default {
@@ -54,6 +65,7 @@ export default {
     PricingCards,
     Heading,
     Contact,
+    SlickCarousel,
     MapLocation,
     FooTer,
   },
