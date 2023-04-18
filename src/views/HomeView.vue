@@ -1,18 +1,47 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
-  </div>
+  <v-app>
+    <NavBar />
+
+    <div>
+      <Carousel />
+    </div>
+
+    <div>
+      <div class="text-h2 text-center pa-12">Prendre Rendez-Vous</div>
+      <v-container class="max-width">
+        <Heading />
+      </v-container>
+    </div>
+
+    <div>
+      <div class="text-h2 text-center pa-12">Notre Tarification</div>
+      <PricingCards />
+    </div>
+  </v-app>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
-
+import NavBar from "../components/NavBar.vue";
+import Carousel from "../components/CarouSel.vue";
+import PricingCards from "../components/PricingCards.vue";
+import Heading from "../components/HeaDing.vue";
 export default {
-  name: "HomeView",
+  name: "HomePage",
+
   components: {
-    HelloWorld,
+    NavBar,
+    Carousel,
+    PricingCards,
+    Heading,
   },
 };
 </script>
+<style scoped>
+.v-carousel {
+  margin-top: -5%;
+}
+
+.max-width {
+  max-width: 60%;
+}
+</style>
