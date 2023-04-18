@@ -49,12 +49,14 @@ export default {
         ],
       },
       {
-        title: "Extra",
+        title: "Extra Package",
         price: "1500-3000$",
         pack: [
-          { text: "1 GB Storage" },
-          { text: "10 GB Bandwidth" },
-          { text: "1 Email Account" },
+          {
+            text: "Replaces missing teeth with a natural-looking and functioning tooth.",
+          },
+          { text: "Helps prevent bone loss and maintain proper oral health." },
+          { text: "Provides a permanent solution for missing teeth." },
         ],
       },
     ],
