@@ -25,6 +25,15 @@
         <Contact />
       </v-container>
     </div>
+    <div>
+      <div class="text-h2 text-center pa-12">Notre Localisation</div>
+      <v-container class="max-width">
+        <MapLocation />
+      </v-container>
+    </div>
+    <div class="mt-12 pt-12">
+      <FooTer />
+    </div>
   </v-app>
 </template>
 
@@ -34,6 +43,8 @@ import Carousel from "../components/CarouSel.vue";
 import PricingCards from "../components/PricingCards.vue";
 import Heading from "../components/HeaDing.vue";
 import Contact from "../components/ContactSection.vue";
+import MapLocation from "../components/MapLocation.vue";
+import FooTer from "../components/FootTer.vue";
 export default {
   name: "HomePage",
 
@@ -43,6 +54,8 @@ export default {
     PricingCards,
     Heading,
     Contact,
+    MapLocation,
+    FooTer,
   },
 };
 </script>

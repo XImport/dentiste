@@ -31,25 +31,25 @@ export default {
     return {
       services: [
         {
-          title: "Web Development",
+          title: "Présentation",
           description:
-            "We create custom websites that are responsive and user-friendly.",
+            "Sur notre site internet, vous trouverez,une présentation de votre praticien,qui est à votre disposition.",
           image:
             "https://dentiste-mohammedia-dr-fouhami.com/sites/S_B2YIMZAVNRFS3PEHXUQAG6ISEI/files/1/icon-bienvenue1.svg",
           link: "#",
         },
         {
-          title: "Mobile App Development",
+          title: "Esthétique",
           description:
-            "We develop mobile apps for iOS and Android platforms that are both intuitive and functional.",
+            "Découvrez les explications sur l'esthétique du sourire, l'hygiène dentaire,découvrez les vidéos...",
           image:
             "https://dentiste-mohammedia-dr-fouhami.com/sites/S_B2YIMZAVNRFS3PEHXUQAG6ISEI/files/1/icon-implant-grey.svg",
           link: "#",
         },
         {
-          title: "UI/UX Design",
+          title: "Contact",
           description:
-            "We design interfaces that are visually appealing and easy to navigate for an enhanced user experience.",
+            "Pour connaître les horaires d'ouvertures, les informations pratiques ou nous contacter",
           image:
             "https://dentiste-mohammedia-dr-fouhami.com/sites/S_B2YIMZAVNRFS3PEHXUQAG6ISEI/files/1/icon-pratiquegrey2.svg",
           link: "#",
