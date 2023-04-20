@@ -73,13 +73,14 @@ export default {
 };
 </script>
 
-<style>
-.carousel-image {
+<style scoped>
+/* .carousel-image {
   width: 100%;
   height: 100%;
   object-fit: contain;
-  background-color: rgb(238, 238, 238);
+  background-color: rgb(218, 236, 250);
 }
+
 .text--carousel {
   margin-top: -500px;
   text-align: center;
@@ -94,6 +95,42 @@ export default {
   background-color: rgb(212, 212, 212, 0.5);
   padding: 10px;
   border-radius: 50px;
-  /* background-color: red !important; */
+
+} */
+
+.carousel-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background-color: rgb(218, 236, 250);
+}
+
+.text--carousel {
+  margin-top: -500px;
+  text-align: center;
+  justify-content: center;
+}
+
+.text--car {
+  max-width: max-content;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  background-color: rgb(212, 212, 212, 0.5);
+  padding: 10px;
+  border-radius: 50px;
+}
+
+.v-sheet::before {
+  margin-top: -10px;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.15);
+  /* z-index: -1; */
 }
 </style>

@@ -1,18 +1,15 @@
 <template>
   <v-app>
     <NavBar />
-
     <div>
       <Carousel />
     </div>
-
     <div>
       <div class="text-h2 text-center pa-12">Prendre Rendez-Vous</div>
       <v-container class="max-width">
         <Heading />
       </v-container>
     </div>
-
     <div>
       <div class="text-h2 text-center pa-12">Notre Tarification</div>
       <v-container class="max-width2">
@@ -82,5 +79,16 @@ export default {
 
 .max-width2 {
   max-width: 70%;
+}
+@media screen and (max-width: 600px) {
+  .v-carousel {
+    margin-top: -25%;
+  }
+  .max-width2 {
+    max-width: 100%;
+  }
+  .max-width {
+    max-width: 100%;
+  }
 }
 </style>
