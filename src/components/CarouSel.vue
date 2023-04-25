@@ -54,7 +54,7 @@ export default {
   data: () => ({
     items: [
       {
-        src: "https://images.unsplash.com/photo-1564420228450-d9a5bc8d6565?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2013&q=80",
+        src: "https://i.imgur.com/hQtXS5m.png",
         text: "UN SERVICE PERSONNALISE",
         multitext: true,
       },
@@ -102,7 +102,7 @@ export default {
   width: 100%;
   height: 100%;
   object-fit: contain;
-  background-color: rgb(218, 236, 250);
+  background-color: transparent;
 }
 
 .text--carousel {

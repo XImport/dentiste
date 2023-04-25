@@ -2,12 +2,24 @@
   <v-app>
     <NavBar />
     <div>
-      <Carousel />
+      <v-lazy
+        :min-height="200"
+        :options="{ threshold: 0.5 }"
+        transition="fade-transition"
+      >
+        <Carousel />
+      </v-lazy>
     </div>
     <div>
       <div class="text-h2 text-center pa-12">Prendre Rendez-Vous</div>
       <v-container class="max-width">
-        <Heading />
+        <v-lazy
+          :min-height="200"
+          :options="{ threshold: 0.5 }"
+          transition="fade-transition"
+        >
+          <Heading />
+        </v-lazy>
       </v-container>
     </div>
     <div>
@@ -19,7 +31,13 @@
     <div>
       <div class="text-h2 text-center pa-12">Contactez-nous</div>
       <v-container class="max-width">
-        <Contact />
+        <v-lazy
+          :min-height="200"
+          :options="{ threshold: 0.5 }"
+          transition="fade-transition"
+        >
+          <Contact />
+        </v-lazy>
       </v-container>
     </div>
 
@@ -28,7 +46,13 @@
         Transformez votre sourire
       </div>
       <v-container class="max-width">
-        <SlickCarousel />
+        <v-lazy
+          :min-height="200"
+          :options="{ threshold: 0.5 }"
+          transition="fade-transition"
+        >
+          <SlickCarousel />
+        </v-lazy>
       </v-container>
     </div>
 

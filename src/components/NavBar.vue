@@ -32,10 +32,16 @@
       <div
         v-for="(btn, index) in NavButtons"
         :key="index"
-        class="text-danger d-none d-lg-block"
+        class="text-danger d-none d-lg-block justify-center"
       >
         <v-btn class="links-nav" target="_blank" text>
-          <span :class="`mr-2 ${links}`">{{ btn.text }}</span>
+          <router-link
+            :class="`mr-2 justify-center custom-link ${links}`"
+            :to="btn.link"
+          >
+            {{ btn.text }}
+          </router-link>
+
           <!-- <v-icon>mdi-open-in-new</v-icon> -->
         </v-btn>
       </div>
@@ -58,12 +64,11 @@
 
       <v-divider></v-divider>
 
-      <v-list dense>
+      <v-list dense class="justify-center">
         <v-list-item v-for="item in NavButtons" :key="item.text" link>
           <v-list-item-icon>
             <v-icon>{{ item.icon }}</v-icon>
           </v-list-item-icon>
-
           <v-list-item-content>
             <v-list-item-title>{{ item.text }}</v-list-item-title>
           </v-list-item-content>
@@ -81,7 +86,7 @@ export default {
   },
   methods: {
     updateScroll() {
-      if (window.scrollY > 400) {
+      if (window.scrollY > 200) {
         this.isTransparent = "blue darken-2";
         // this.Logo = "carousel-image--Bg--Transparent";
         this.links = "white--text";
@@ -101,19 +106,23 @@ export default {
       {
         text: "Accueil",
         icon: "mdi-home",
+        link: "/",
       },
       {
         text: "Le Cabinet",
         icon: "mdi-greenhouse",
+        link: "/cabiner",
       },
       {
         text: "Nos Prestations",
         icon: "mdi-cast",
+        link: "/prestation",
       },
 
       {
         text: "Contact",
         icon: "mdi-text-box-multiple-outline",
+        link: "/contact",
       },
     ],
   }),
@@ -141,5 +150,10 @@ export default {
 .carousel-image {
   margin-top: -16px;
   background-color: transparent;
+}
+.custom-link {
+  color: blue; /* your desired color */
+  text-decoration: none; /* remove underline */
+  cursor: pointer; /* optional: add cursor style */
 }
 </style>

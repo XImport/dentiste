@@ -13,7 +13,7 @@
             </ul>
           </v-card-text>
           <v-card-actions>
-            <v-btn block color="primary">Select</v-btn>
+            <v-btn block color="primary">More Info</v-btn>
           </v-card-actions>
         </v-card>
       </v-col>
