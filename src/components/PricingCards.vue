@@ -53,7 +53,7 @@ export default {
         price: "1500-3000$",
         pack: [
           {
-            text: "Replaces missing teeth with a natural-looking and functioning tooth.",
+            text: "Replaces missing teeth with a natural-looking tooth.",
           },
           { text: "Helps prevent bone loss and maintain proper oral health." },
           { text: "Provides a permanent solution for missing teeth." },

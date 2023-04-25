@@ -38,7 +38,7 @@
               </v-col>
             </v-row>
           </v-container>
-          <div class="text-h2 text--carousel">{{ MainTitle }}</div>
+          <div class="text-h2 text--carousel text-center">{{ MainTitle }}</div>
         </v-row>
       </v-sheet>
     </v-carousel-item>
@@ -107,6 +107,7 @@ export default {
 .text--carousel {
   margin-top: -500px;
   text-align: center;
+  align-content: center;
   justify-content: center;
 }
 

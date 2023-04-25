@@ -98,11 +98,11 @@ export default {
 }
 
 .max-width {
-  max-width: 60%;
+  max-width: 70%;
 }
 
 .max-width2 {
-  max-width: 70%;
+  max-width: 90%;
 }
 @media screen and (max-width: 600px) {
   .v-carousel {
