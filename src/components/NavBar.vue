@@ -65,7 +65,12 @@
       <v-divider></v-divider>
 
       <v-list dense class="justify-center">
-        <v-list-item v-for="item in NavButtons" :key="item.text" link>
+        <v-list-item
+          v-for="item in NavButtons"
+          :key="item.text"
+          links
+          :to="item.link"
+        >
           <v-list-item-icon>
             <v-icon>{{ item.icon }}</v-icon>
           </v-list-item-icon>
