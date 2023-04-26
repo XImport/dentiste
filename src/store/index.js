@@ -60,7 +60,16 @@ export default new Vuex.Store({
       return state.Nonvalide;
     },
   },
-  mutations: {},
+  mutations: {
+    Validate(state, payload) {
+      state.valide.push(payload);
+      // state.Nonvalide.splice(payload);
+    },
+    RemoveBeforeValidate(state, payload) {
+      state.Nonvalide.splice(payload, 1);
+      // state.Nonvalide.splice(payload);
+    },
+  },
   actions: {},
   modules: {},
 });

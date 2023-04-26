@@ -12,8 +12,15 @@
         <v-spacer></v-spacer>
         <v-dialog v-model="dialog" max-width="500px">
           <template v-slot:activator="{ on, attrs }">
-            <v-btn color="primary" dark class="mb-2" v-bind="attrs" v-on="on">
-              New Item
+            <v-btn
+              color="primary"
+              dark
+              class="mb-2"
+              v-bind="attrs"
+              v-on="on"
+              v-if="rendezVous"
+            >
+              Ajouter Rendez Vous
             </v-btn>
           </template>
           <v-card>
@@ -86,17 +93,21 @@
     </template>
     <template v-slot:item.actions="{ item }">
       <v-icon small class="mr-2" @click="editItem(item)"> mdi-pencil </v-icon>
-      <v-icon small @click="deleteItem(item)"> mdi-delete </v-icon>
+      <v-icon small class="mr-2" @click="deleteItem(item)"> mdi-delete </v-icon>
+      <v-icon small @click="checkItem(item)" v-if="rendezVous">
+        mdi-check
+      </v-icon>
     </template>
-    <template v-slot:no-data>
+    <!-- <template v-slot:no-data>
       <v-btn color="primary" @click="initialize"> Reset </v-btn>
-    </template>
+    </template> -->
   </v-data-table>
 </template>
 
 <script>
 export default {
   props: ["getdata"],
+
   data: () => ({
     dialog: false,
     dialogDelete: false,
@@ -117,10 +128,10 @@ export default {
     editedIndex: -1,
     editedItem: {
       prenom: "",
-      nom: 0,
-      email: 0,
+      nom: "",
+      email: "",
       tele: 0,
-      date: 0,
+      date: "",
     },
     defaultItem: {
       name: "",
@@ -134,6 +145,15 @@ export default {
   computed: {
     formTitle() {
       return this.editedIndex === -1 ? "New Item" : "Edit Item";
+    },
+
+    rendezVous() {
+      // console.log(this.$route);
+      if (this.$route.name === "NonValide") {
+        return true;
+      } else {
+        return false;
+      }
     },
   },
 
@@ -159,6 +179,13 @@ export default {
       this.editedIndex = this.data.indexOf(item);
       this.editedItem = Object.assign({}, item);
       this.dialog = true;
+    },
+    checkItem(item) {
+      this.editedIndex = this.data.indexOf(item);
+      // this.Validate = Object.assign({}, item);
+      console.log(this.$store.getters.getValide);
+      this.$store.commit("Validate", Object.assign({}, item));
+      this.$store.commit("RemoveBeforeValidate", this.data.indexOf(item));
     },
 
     deleteItem(item) {
