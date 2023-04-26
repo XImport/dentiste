@@ -94,7 +94,7 @@ export default {
 </script>
 <style scoped>
 .v-carousel {
-  margin-top: -5%;
+  margin-top: -10%;
 }
 
 .max-width {

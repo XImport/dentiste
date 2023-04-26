@@ -49,17 +49,17 @@ export default {
     Cards: [
       {
         title: "Total des Rendez Vous",
-        Number: 100,
+        Number: 0,
         class: "indigo darken-1 white--text",
       },
       {
         title: "Rendez Vous Valide",
-        Number: 100,
+        Number: 0,
         class: "teal darken-2 white--text",
       },
       {
         title: "Rendez Vous Non Valide",
-        Number: 50,
+        Number: 0,
         class: "orange accent-2 white--text",
       },
     ],
@@ -69,6 +69,12 @@ export default {
   },
   computed: {
     ...mapGetters(["getValide", "getNonValide"]),
+  },
+
+  mounted() {
+    this.Cards[0].Number = this.getValide.length + this.getNonValide.length;
+    this.Cards[1].Number = this.getValide.length;
+    this.Cards[2].Number = this.getNonValide.length;
   },
 };
 </script>
