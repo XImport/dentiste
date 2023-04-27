@@ -16,7 +16,7 @@
       </v-lazy>
     </div>
     <div>
-      <div class="text-h2 text-center pa-12">Notre Tarification</div>
+      <div class="text-h2 text-center pb-6">Notre Tarification</div>
       <v-container class="max-width2">
         <PricingCards />
       </v-container>

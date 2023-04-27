@@ -23,13 +23,15 @@
       </v-container>
     </div>
     <div>
-      <div class="text-h2 text-center pa-12">Notre Tarification</div>
+      <div class="text-h2 text-center pb-6 pt-12">Notre Tarification</div>
       <v-container class="max-width2">
         <PricingCards />
       </v-container>
     </div>
     <div>
-      <div class="text-h2 text-center pa-12">Contactez-nous</div>
+      <div class="text-h2 text-center pb-6 text--custom pt-12">
+        Contactez-nous
+      </div>
       <v-container class="max-width">
         <v-lazy
           :min-height="200"
@@ -42,10 +44,10 @@
     </div>
 
     <div>
-      <div class="text-h2 text-center pa-12 mt-9">
+      <div class="text-h2 pb-6 text-center mt-9 text--custom pt-12">
         Transformez votre sourire
       </div>
-      <v-container class="max-width">
+      <v-container class="max-width pt-6">
         <v-lazy
           :min-height="200"
           :options="{ threshold: 0.5 }"
@@ -57,8 +59,8 @@
     </div>
 
     <div>
-      <div class="text-h2 text-center pa-12 mt-12">Notre Localisation</div>
-      <v-container class="max-width">
+      <div class="text-h2 pb-6 text-center mt-12">Notre Localisation</div>
+      <v-container class="max-width pt-12">
         <MapLocation />
       </v-container>
     </div>
@@ -102,7 +104,7 @@ export default {
 }
 
 .max-width2 {
-  max-width: 90%;
+  max-width: 80%;
 }
 @media screen and (max-width: 600px) {
   .v-carousel {
@@ -113,6 +115,9 @@ export default {
   }
   .max-width {
     max-width: 100%;
+  }
+  .text--custom {
+    font-size: 3rem !important;
   }
 }
 </style>

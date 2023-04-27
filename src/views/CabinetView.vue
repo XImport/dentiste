@@ -41,7 +41,7 @@
       </v-container>
     </div>
     <div>
-      <div class="text-h2 text-center pa-12 mt-12">Notre Localisation</div>
+      <div class="text-h2 text-center pb-4 mt-12">Notre Localisation</div>
       <v-container class="max-width">
         <MapLocation />
       </v-container>

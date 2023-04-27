@@ -40,7 +40,9 @@
               </v-col>
             </v-row>
           </v-container>
-          <div class="text-h2 text--carousel">{{ item.text }}</div>
+          <div class="text-h2 text--carousel text--sml-phone">
+            {{ item.text }}
+          </div>
         </v-row>
       </v-sheet>
     </v-carousel-item>
@@ -74,30 +76,6 @@ export default {
 </script>
 
 <style scoped>
-/* .carousel-image {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  background-color: rgb(218, 236, 250);
-}
-
-.text--carousel {
-  margin-top: -500px;
-  text-align: center;
-  justify-content: center;
-}
-.text--car {
-  max-width: max-content;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  margin: auto;
-  background-color: rgb(212, 212, 212, 0.5);
-  padding: 10px;
-  border-radius: 50px;
-
-} */
-
 .carousel-image {
   width: 100%;
   height: 100%;
@@ -132,5 +110,11 @@ export default {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.15);
   /* z-index: -1; */
+}
+
+@media screen and (max-width: 600px) {
+  .text--sml-phone {
+    font-size: 2.9rem !important;
+  }
 }
 </style>

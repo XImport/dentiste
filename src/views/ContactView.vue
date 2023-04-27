@@ -16,7 +16,7 @@
       </v-lazy>
     </div>
     <div>
-      <div class="text-h2 text-center pa-12">
+      <div class="text-h2 text-center pb-6 pt-6">
         Vous Pouvez Nous Contacter Sur
       </div>
       <v-container class="max-width2">

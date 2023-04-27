@@ -4,8 +4,8 @@
       <v-col md="4" v-for="(card, index) in Cards" :key="index">
         <v-card>
           <v-card-title class="text-center">
-            <h2>{{ card.title }}</h2>
-            <p class="display-1 cyan--text">${{ card.price }}</p>
+            <h3 class="text--custom">{{ card.title }}</h3>
+            <p class="cyan--text">${{ card.price }}</p>
           </v-card-title>
           <v-card-text>
             <ul v-for="(item, index) in card.pack" :key="index">
@@ -67,5 +67,8 @@ export default {
 <style scoped>
 .v-card {
   padding: 50px;
+}
+.text--custom {
+  font-size: 1.2rem !important;
 }
 </style>
