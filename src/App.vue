@@ -9,3 +9,9 @@ export default {
   data: () => ({}),
 };
 </script>
+
+<style>
+#app {
+  overflow-x: hidden;
+}
+</style>
