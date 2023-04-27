@@ -96,8 +96,8 @@ export default {
 .max--width {
   width: 800px !important;
 }
-.bg--svg--img {
-  background-image: url("../../assets/Animated\ Shape.svg");
+.v-application {
+  background-image: url("../../assets/Animated\ Shape.svg") !important;
 }
 .v-container2 {
   max-width: 70%;

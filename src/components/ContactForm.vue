@@ -1,6 +1,6 @@
 <template>
   <v-container>
-    <v-card class="pa-4">
+    <v-card class="pa-12 rounded-xl">
       <v-form ref="form" v-model="valid">
         <v-row>
           <v-col cols="12" sm="6">
